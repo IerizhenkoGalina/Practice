@@ -1,68 +1,82 @@
 
-//9 task
+//Обращение к символам строки
 const str3 = 'abcde';
 console.log(str3[0]);
+//Prints a
 console.log(str3[2]);
+//Prints c
 console.log(str3[4]);
+//Prints e
 
-
-//10 task
+//Numbers
 const num1 = '12345';
 console.log(num1[0]*num1[1]*num1[2]*num1[3]*num1[4]);
+//Prints 120
 
+//Вычисление количества секунд в часе, в сутках, в месяце(30 дн.) 
+console.log(60*60);//seconds in a hour
+//Prints 3600
+console.log(60*60*24);// seconds in a day
+//Prints 86400
+console.log(60*60*24*30);// seconds in a month
+//Prints 2592000
 
-//11 task
-console.log(60*60);//secunds of hour
-console.log(60*60*24);// secunds of day
-console.log(60*60*24*30);// secunds of month
-
-
-//12
+//Создайте три переменные, текущее время в формате- час:минута:секунда
 const hours = '3';
 const minutes = '06';
-const secunds = '26';
-console.log(hours + ':' + minutes + ':' + secunds);
-console.log(`${hours}:${minutes}:${secunds}`);
+const seconds = '26';
+console.log(hours + ':' + minutes + ':' + seconds);
+//Prints 3:06:26
+console.log(`${hours}:${minutes}:${seconds}`);
+//Prints 3:06:26
 
-
-//13
+//Работа с присваиванием и декрементами 
 let nums = 47;
 nums+=7;
 console.log(nums);
+//Prints 54
 
 let numb = 47;
 numb-=18;
 console.log(numb);
+//Prints 29
 
 let numbe = 47;
 numbe*=10;
 console.log(numbe);
+//Prints 470
 
 let number = 47;
 number/=15;
 console.log(number);
+//Prints 3.1333333333333333
 
 
 // Arrays
 const arr = ['Hello, ', 'World', '!'];
-console.log(arr[0] + arr[1]+arr[2]);
-
+console.log(arr[0]+arr[1]+arr[2]);
+//Prints Hello, World!
 let string = arr[0]+arr[1]+arr[2];
 console.log(string);
+//Prints Hello, World!
 
 let strings=['Hello, ', 'World', '!'];
 strings[0]='Buy';
 console.log(strings);
+//Prints Buy, World!
 
-//asociation array
+/*Asociation Array
+*/
 const obj={'Kolya':'1000','Vasya':'2000','Petya':'3000'};
 console.log(obj['Kolya']);
+//Prints 1000
 console.log(obj['Petya']);
+//Prints 3000
 
 //creating array of first way
 const array1=[1,2,3,4,5];
 console.log(array1);
-
+//Prints [ 1, 2, 3, 4, 5 ]
 //creating array second way
 const array2=[];
 array2[0]=1;
@@ -71,80 +85,50 @@ array2[2]=3;
 array2[3]=4;
 array2[4]=5;
 console.log(array2);
-// 
-const array3={'ru':['blue','red','green'], 'en':['red','green','blue']
+//Prints [ 1, 2, 3, 4, 5 ]
+// Многомерные массивы
+const array3={
+	'ru':['blue','red','green'],
+	'en':['red','green','blue']
   };
 console.log(array3['ru'][0]);
-console.log(array3['en'][2]);*/
-
-
-const z=false;
-if(z=='0'){
-   console.log('==');
-   } if(z=='0'){
-     console.log('==');
-   };
-//
-var s=function g(){
-  return 23;
-};
- g();
-console.log(g());
-function foo(){
-  return bar();
-  var bar=function(){
-    return 3;
-    var bar=function(){
-      return 8;
-    }
-  }
-};
-console.log(foo());
-//
-for(var i=1;i>5;i++){
-  if(i%2===0)
-{ console.log(i);
-}
-};
-//
-console.log(4+3+2+'1');
-//
-for(var i=1;i<5;i++){
-  if((i+i*i)%2===0)
-{ console.log(i);
-}
-};
-//
-const v='javascript'.indexOf('p');
-console.log(v);
-
-
+//Prints blue
+console.log(array3['en'][2]);
+//Prints blue
 
 const arrayNum = ['a','b','c'];
 console.log(arrayNum);
 console.log(arrayNum[0]);
 console.log(arrayNum[1]);
 console.log(arrayNum[2]);
+
 const arrayString=['a','b','c','d'];
 console.log(arrayString[0]+ '+' +arrayString[1]+ ','+ arrayString[2]+'+'+arrayString[3]);
 //
+
 const arrayPlus=[2,5,3,9];
 let result = arrayPlus[0] * arrayPlus[1] + arrayPlus[2] * arrayPlus[3];
 console.log(result);
 
 const obj = {'a':'1', 'b':'2','c':'3'};
 console.log(obj['c']);
-console.log(obj.c);
+console.log(obj.c);// second way
 
 const salary ={'Sveta':'30000', 'Zhenya':'20000', 'Dima':'50000'};
 console.log(salary.Sveta);
 console.log(salary['Dima']);
 
 const objWeek={
-  'first':'Monday','second':'Tuesday','third':'Wednesday','fourth':'Thursday','fifth':'Friday','sixth':'Saturday','seventh':'Sunday'
+  'first':'Monday',
+  'second':'Tuesday',
+  'third':'Wednesday',
+  'fourth':'Thursday',
+  'fifth':'Friday',
+  'sixth':'Saturday',
+  'seventh':'Sunday'
 };
 console.log(objWeek['third']);
-console.log(objWeek.third);
+console.log(objWeek.third);// second way
 let day=objWeek['sixth'];
 console.log(day);
 let days='sixth';
@@ -182,35 +166,7 @@ if(min>=0 && min<=14) {
 } if(min>=46 && min<=59) {
   console.log('Fourth part');
 };*/
-//Tasks on the flat: We have building, there are 3 an entrances and 3 floors. Each floor has 15 flats.
-//Calculete: What entrance will be and what floor will be something of those flat? 
-//
-// First an entrance.There are  45 flats, with number 1 about 45. 
-/*const flat= 10;// we choose number here
-if(flat>=1&&flat<=15) {
-  console.log('This is in the First entrance and First floor');
-} if(flat>=16&&flat<=30) {
-  console.log('This is in the First entrance and Second floor');
-} if(flat>=31&&flat<=45) {
-  console.log('This is in the First entrance and Third floor');
- 
-  //Second an entrance. There are  45 flats, with number 46 about 90.
-}if(flat>=46&&flat<=60) {
-  console.log('This is in the Second entrance and First floor');
-}if(flat>=61&&flat<=75) {
-  console.log('This is in the Second entrance and Second floor');
-  }if(flat>=76&&flat<=90) {
-  console.log('This is in the Second entrance and Third floor');
-   // 
- //Third an entrance. There are  45 flats, with number 91 about 135.
-}if(flat>=91&&flat<=105){
-  console.log('This is in the Third entrance and First floor');
-}if(flat>=106&&flat<=120){
-  console.log('This is in the Third entrance and Second floor');
-  }if(flat>=121&&flat<=135) {
-  console.log('This is in the Third entrance and Third floor');
-  };
-*/
+
 /*var lang='en';
 if(lang=='ru'){
   var arr =['Mn','Ts','Wd','Th','Fr','St','Sn'];
