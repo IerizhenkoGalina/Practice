@@ -107,3 +107,12 @@ console.log('I usually like to learn English every day'.endsWith('a'));
 console.log('        I usually like to learn English every day'.trim());
 //trims whitespace from the beginning and end of the string.
 //Prints: I usually like to learn English every day
+
+//Обращение к символам строки
+const str3 = 'abcde';
+console.log(str3[0]);
+//Prints a
+console.log(str3[2]);
+//Prints c
+console.log(str3[4]);
+//Prints e
