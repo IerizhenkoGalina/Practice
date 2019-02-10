@@ -17,7 +17,7 @@ console.log(strOne +  strTwo);
 const name = "Galina";
 console.log(`Hello, ${name}!`);
 //second way
-console.log('Hello, '+ name'+'!');
+console.log('Hello, '+ name+'!');
 //Prints: Hello, Galina!
 
 /*Создайте переменную age и присвойте ей ваш возраст. Выведите на экран 'I am age years!'*/
@@ -71,7 +71,8 @@ console.log('Hello'.length);
 
 /*Use the .length property to log the number of 
 characters in the following string to the 
-console: 'Teaching the world how to code'*/
+console: 'Teaching the world how to code'
+*/
 
 console.log('Teaching the world how to code'.length);
 //Prints: 30
